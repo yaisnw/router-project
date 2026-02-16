@@ -16,7 +16,7 @@ const appRouter = createBrowserRouter(createRoutesFromElements(
     <Route path="search" element={<SearchPage/>}/>
     <Route path="pet-details-not-found" element={<PetDetailsNotFound/>}/>
   </Route>
-));
+), { basename: '/router-project' });
 
 function App() {
   return (
