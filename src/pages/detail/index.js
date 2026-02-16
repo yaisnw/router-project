@@ -48,6 +48,7 @@ const PetDetailsPage = () => {
                 src={
                   data.photos[0]?.medium || 'https://i.imgur.com/aEcJUFK.png'
                 }
+                onError={(e) => { e.target.src = 'https://i.imgur.com/aEcJUFK.png' }}
                 alt=""
               />
             </div>
